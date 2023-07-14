@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">  
+    <link rel="icon" href="./images/weather-icon.png" >
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="serch-box">
+                <input type="text" placeholder="Enter Your City Name " class="input-box" autocomplete="on">
+           
+            <button class="fa-solid fa-magnifying-glass" id="searchBtn" role="button" aria-label="searchBtn"></button>
+            </div>
+        </header>
+        <div class="city-not-found">
+           <h1>Sorry, City Not Found</h1>
+           <img src="./images/error.png" alt=""> 
+        </div>
+        <div class="weather-body">
+            <img  class="weather-img">
+            <div class="weather-box">
+                <p class="temperature">0 °C</p>
+                <p class="description">light rain</p>
+            </div>
+        
+        <div class="weather-details">
+            <div class="humidity">
+                <i class="fa-sharp fa-solid fa-droplet"></i>
+                <div class="text">
+                    <span id="humidity">45%</span>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="wind">
+                <i class="fa-sharp fa-solid fa-wind"></i>
+                <div class="text">
+                    <span id="wind">15Km/hr</span>
+                    <p>Wind</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="./script.js"></script>
+</body>
+</html>
